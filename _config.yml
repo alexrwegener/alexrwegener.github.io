@@ -1,0 +1,48 @@
+# Site wide configuration
+
+title: alexrwegener.com
+locale: en_US
+description: Personal site and blog
+logo: site-logo.png
+search: true
+url: http://localhost:4000
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  use_coderay: false
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Alex Wegener
+  avatar: alexrwegener_profile.png
+  email: alexrwegener@gmail.com
+  disqus-shortname: alexrwegener
+  github: alexrwegener
+  twitter: alexrwegener
+  stackexchange: http://stackexchange.com/users/231821/alex
+  linkedin: pub/alex-wegener/29/239/a4b
+  google:
+    plus: #username
+    analytics: UA-31499820-1
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
